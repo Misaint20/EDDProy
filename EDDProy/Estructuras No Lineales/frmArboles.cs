@@ -65,6 +65,9 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPreOrden.Text = "";
             lblRecorridoInOrden.Text = "";
             lblRecorridoPostOrden.Text = "";
+            InOrdenCheck.Checked = false;
+            PreOrdenCheck.Checked = false;
+            PostOrdenCheck.Checked = false;
         }
 
         private void btnGrafica_Click(object sender, EventArgs e)
@@ -98,6 +101,14 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
+
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+
+            if (!PreOrdenCheck.Checked && !InOrdenCheck.Checked && !PostOrdenCheck.Checked)
+                MessageBox.Show("Seleccione algun metodo de recorrido antes de comenzar");
+
             //Recorrido en PreOrden
             // Revision de seleccion de PreOrden
             if (PreOrdenCheck.Checked)
