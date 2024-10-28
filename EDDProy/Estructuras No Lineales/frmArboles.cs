@@ -99,48 +99,61 @@ namespace EDDemo.Estructuras_No_Lineales
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
             //Recorrido en PreOrden
-            //Obtenemos el nodo Raiz del arbol
-            miRaiz = miArbol.RegresaRaiz();
-            miArbol.strRecorrido = "";
-
-            if (miRaiz == null)
+            // Revision de seleccion de PreOrden
+            if (PreOrdenCheck.Checked)
             {
-                lblRecorridoPreOrden.Text = "El arbol esta vacio";
-                return;
-            }
-            lblRecorridoPreOrden.Text = "";
-            miArbol.PreOrden(miRaiz);
+                //Obtenemos el nodo Raiz del arbol
+                miRaiz = miArbol.RegresaRaiz();
+                miArbol.strRecorrido = "";
 
-            lblRecorridoPreOrden.Text = miArbol.strRecorrido;
+                if (miRaiz == null)
+                {
+                    lblRecorridoPreOrden.Text = "El arbol esta vacio";
+                    return;
+                }
+                lblRecorridoPreOrden.Text = "";
+                miArbol.PreOrden(miRaiz);
+
+                lblRecorridoPreOrden.Text = miArbol.strRecorrido;
+            }
 
 
             //Recorrido en InOrden
-            //Obtenemos el nodo Raiz del arbol
-            miRaiz = miArbol.RegresaRaiz();
-            miArbol.strRecorrido = "";
-
-            if (miRaiz == null)
+            // Revision de seleccion de InOrden
+            if (InOrdenCheck.Checked)
             {
-                lblRecorridoPostOrden.Text = "El arbol esta vacio";
-                return;
+                //Obtenemos el nodo Raiz del arbol
+                miRaiz = miArbol.RegresaRaiz();
+                miArbol.strRecorrido = "";
+
+                if (miRaiz == null)
+                {
+                    lblRecorridoPostOrden.Text = "El arbol esta vacio";
+                    return;
+                }
+                lblRecorridoInOrden.Text = "";
+                miArbol.InOrden(miRaiz);
+                lblRecorridoInOrden.Text = miArbol.strRecorrido;
             }
-            lblRecorridoInOrden.Text = "";
-            miArbol.InOrden(miRaiz);
-            lblRecorridoInOrden.Text = miArbol.strRecorrido;
 
 
             //Recorrido en PostOrden
-            //Obtenemos el nodo Raiz del arbol
-            miRaiz = miArbol.RegresaRaiz();
-            miArbol.strRecorrido = "";
+            // Revision de seleccion de PostOrden
+            if (PostOrdenCheck.Checked)
+            {
+                //Obtenemos el nodo Raiz del arbol
+                miRaiz = miArbol.RegresaRaiz();
+                miArbol.strRecorrido = "";
 
-            if (miRaiz == null) {
-                lblRecorridoPostOrden.Text = "El arbol esta vacio";
-                return;
+                if (miRaiz == null)
+                {
+                    lblRecorridoPostOrden.Text = "El arbol esta vacio";
+                    return;
+                }
+                lblRecorridoPostOrden.Text = "";
+                miArbol.PostOrden(miRaiz);
+                lblRecorridoPostOrden.Text = miArbol.strRecorrido;
             }
-            lblRecorridoPostOrden.Text = ""; 
-            miArbol.PostOrden(miRaiz);
-            lblRecorridoPostOrden.Text = miArbol.strRecorrido;
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
@@ -173,5 +186,28 @@ namespace EDDemo.Estructuras_No_Lineales
             txtDato.Text = "";
         }
 
+        private void buscarNodo_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El arbol esta vacio");
+                return;
+            }
+
+            int dato = int.Parse(strBuscar.Text);
+
+            //if (dato == 0)
+            //    MessageBox.Show("Introduzca un valor antes de iniciar");
+            //else
+            bool result = miArbol.BuscarNodo(dato, miRaiz);
+
+            if (result == true)
+                MessageBox.Show("El dato fue encontrado en el arbol :)");
+            else
+                MessageBox.Show("El dato no fue encontrado en el arbol :(");
+        }
     }
 }
+

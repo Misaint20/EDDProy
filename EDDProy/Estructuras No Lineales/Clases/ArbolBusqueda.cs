@@ -112,5 +112,17 @@ namespace EDDemo.Estructuras_No_Lineales
             return;
          }
 
+        public bool BuscarNodo (int dato, NodoBinario nodo)
+        {
+            if (nodo == null)
+                return false;
+
+            if (dato == nodo.Dato)
+                return true;
+            else if (dato < nodo.Dato)
+                return BuscarNodo(dato, nodo.Izq);
+            else
+                return BuscarNodo(dato, nodo.Der);
+        }
     }
 }
