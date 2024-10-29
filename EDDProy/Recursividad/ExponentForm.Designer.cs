@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(267, 24);
+            this.label1.Location = new System.Drawing.Point(83, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 36);
             this.label1.TabIndex = 6;
@@ -59,7 +59,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(215, 142);
+            this.label2.Location = new System.Drawing.Point(52, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 16);
             this.label2.TabIndex = 7;
@@ -69,7 +69,7 @@
             // 
             this.number.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.number.Location = new System.Drawing.Point(194, 172);
+            this.number.Location = new System.Drawing.Point(31, 188);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(177, 20);
             this.number.TabIndex = 8;
@@ -81,7 +81,7 @@
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.back.Location = new System.Drawing.Point(693, 402);
+            this.back.Location = new System.Drawing.Point(354, 398);
             this.back.Margin = new System.Windows.Forms.Padding(0);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
@@ -94,7 +94,7 @@
             // 
             this.start.BackColor = System.Drawing.Color.LightGray;
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.start.Location = new System.Drawing.Point(334, 236);
+            this.start.Location = new System.Drawing.Point(171, 252);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(139, 42);
             this.start.TabIndex = 11;
@@ -107,7 +107,7 @@
             this.labelResult.AutoSize = true;
             this.labelResult.BackColor = System.Drawing.Color.Transparent;
             this.labelResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelResult.Location = new System.Drawing.Point(270, 306);
+            this.labelResult.Location = new System.Drawing.Point(107, 322);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(0, 13);
             this.labelResult.TabIndex = 12;
@@ -117,7 +117,7 @@
             this.time.AutoSize = true;
             this.time.BackColor = System.Drawing.Color.Transparent;
             this.time.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.time.Location = new System.Drawing.Point(270, 338);
+            this.time.Location = new System.Drawing.Point(107, 354);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(0, 13);
             this.time.TabIndex = 13;
@@ -127,7 +127,7 @@
             this.complex.AutoSize = true;
             this.complex.BackColor = System.Drawing.Color.Transparent;
             this.complex.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.complex.Location = new System.Drawing.Point(270, 371);
+            this.complex.Location = new System.Drawing.Point(107, 387);
             this.complex.Name = "complex";
             this.complex.Size = new System.Drawing.Size(0, 13);
             this.complex.TabIndex = 14;
@@ -138,7 +138,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(430, 142);
+            this.label3.Location = new System.Drawing.Point(267, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 16);
             this.label3.TabIndex = 15;
@@ -148,7 +148,7 @@
             // 
             this.number2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.number2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.number2.Location = new System.Drawing.Point(415, 172);
+            this.number2.Location = new System.Drawing.Point(252, 188);
             this.number2.Name = "number2";
             this.number2.Size = new System.Drawing.Size(177, 20);
             this.number2.TabIndex = 16;
@@ -159,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(464, 450);
             this.Controls.Add(this.number2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.complex);

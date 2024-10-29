@@ -106,6 +106,66 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\BinarySearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\BinarySearchForm.Designer.cs">
+      <DependentUpon>BinarySearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Clases\BinarySearch.cs" />
+    <Compile Include="Recursividad\Clases\Exponent.cs" />
+    <Compile Include="Recursividad\Clases\Factorial.cs" />
+    <Compile Include="Recursividad\Clases\Fibonacci.cs" />
+    <Compile Include="Recursividad\Clases\Hanoi.cs" />
+    <Compile Include="Recursividad\Clases\SumArray.cs" />
+    <Compile Include="Recursividad\Componentes\ArrayElements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Componentes\ArrayElements.Designer.cs">
+      <DependentUpon>ArrayElements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Componentes\ArrayItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Componentes\ArrayItems.Designer.cs">
+      <DependentUpon>ArrayItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Componentes\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Componentes\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\ExponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\ExponentForm.Designer.cs">
+      <DependentUpon>ExponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\FactorialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FactorialForm.Designer.cs">
+      <DependentUpon>FactorialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\FibonacciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FibonacciForm.Designer.cs">
+      <DependentUpon>FibonacciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\HanoiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\HanoiForm.Designer.cs">
+      <DependentUpon>HanoiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\SumArrayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\SumArrayForm.Designer.cs">
+      <DependentUpon>SumArrayForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +188,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recursividad\BinarySearchForm.resx">
+      <DependentUpon>BinarySearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Componentes\ArrayElements.resx">
+      <DependentUpon>ArrayElements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Componentes\ArrayItems.resx">
+      <DependentUpon>ArrayItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Componentes\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\ExponentForm.resx">
+      <DependentUpon>ExponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\FactorialForm.resx">
+      <DependentUpon>FactorialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\FibonacciForm.resx">
+      <DependentUpon>FibonacciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\HanoiForm.resx">
+      <DependentUpon>HanoiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\SumArrayForm.resx">
+      <DependentUpon>SumArrayForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="external\config6">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -444,5 +531,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

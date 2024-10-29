@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(300, 46);
+            this.label1.Location = new System.Drawing.Point(79, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 36);
             this.label1.TabIndex = 6;
@@ -70,7 +70,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(301, 167);
+            this.label2.Location = new System.Drawing.Point(80, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 16);
             this.label2.TabIndex = 11;
@@ -80,7 +80,7 @@
             // 
             this.arreglo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.arreglo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.arreglo.Location = new System.Drawing.Point(267, 186);
+            this.arreglo.Location = new System.Drawing.Point(46, 211);
             this.arreglo.Name = "arreglo";
             this.arreglo.Size = new System.Drawing.Size(277, 20);
             this.arreglo.TabIndex = 12;
@@ -89,7 +89,7 @@
             // 
             this.Accept.BackColor = System.Drawing.Color.LightGray;
             this.Accept.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Accept.Location = new System.Drawing.Point(335, 223);
+            this.Accept.Location = new System.Drawing.Point(114, 248);
             this.Accept.Name = "Accept";
             this.Accept.Size = new System.Drawing.Size(129, 33);
             this.Accept.TabIndex = 13;
@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(368, 356);
             this.Controls.Add(this.Accept);
             this.Controls.Add(this.arreglo);
             this.Controls.Add(this.label2);
