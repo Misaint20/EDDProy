@@ -47,6 +47,11 @@ namespace EDDemo.Estructuras_No_Lineales
             this.label1 = new System.Windows.Forms.Label();
             this.buscarNodo = new System.Windows.Forms.Button();
             this.strBuscar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.eliminarNodo = new System.Windows.Forms.Button();
+            this.deleteNodo = new System.Windows.Forms.TextBox();
+            this.NivelesCheck = new System.Windows.Forms.CheckBox();
+            this.lblRecorridoNiveles = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -246,11 +251,66 @@ namespace EDDemo.Estructuras_No_Lineales
             this.strBuscar.Size = new System.Drawing.Size(52, 26);
             this.strBuscar.TabIndex = 18;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(340, 156);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Dato :";
+            // 
+            // eliminarNodo
+            // 
+            this.eliminarNodo.Location = new System.Drawing.Point(438, 151);
+            this.eliminarNodo.Margin = new System.Windows.Forms.Padding(2);
+            this.eliminarNodo.Name = "eliminarNodo";
+            this.eliminarNodo.Size = new System.Drawing.Size(62, 24);
+            this.eliminarNodo.TabIndex = 22;
+            this.eliminarNodo.Text = "Eliminar";
+            this.eliminarNodo.UseVisualStyleBackColor = true;
+            this.eliminarNodo.Click += new System.EventHandler(this.eliminarNodo_Click);
+            // 
+            // deleteNodo
+            // 
+            this.deleteNodo.Location = new System.Drawing.Point(376, 151);
+            this.deleteNodo.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteNodo.Multiline = true;
+            this.deleteNodo.Name = "deleteNodo";
+            this.deleteNodo.Size = new System.Drawing.Size(52, 26);
+            this.deleteNodo.TabIndex = 21;
+            // 
+            // NivelesCheck
+            // 
+            this.NivelesCheck.AutoSize = true;
+            this.NivelesCheck.Location = new System.Drawing.Point(192, 130);
+            this.NivelesCheck.Name = "NivelesCheck";
+            this.NivelesCheck.Size = new System.Drawing.Size(81, 17);
+            this.NivelesCheck.TabIndex = 26;
+            this.NivelesCheck.Text = "Por niveles:";
+            this.NivelesCheck.UseVisualStyleBackColor = true;
+            // 
+            // lblRecorridoNiveles
+            // 
+            this.lblRecorridoNiveles.AutoSize = true;
+            this.lblRecorridoNiveles.Location = new System.Drawing.Point(272, 131);
+            this.lblRecorridoNiveles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRecorridoNiveles.Name = "lblRecorridoNiveles";
+            this.lblRecorridoNiveles.Size = new System.Drawing.Size(13, 13);
+            this.lblRecorridoNiveles.TabIndex = 25;
+            this.lblRecorridoNiveles.Text = "1";
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 389);
+            this.Controls.Add(this.NivelesCheck);
+            this.Controls.Add(this.lblRecorridoNiveles);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.eliminarNodo);
+            this.Controls.Add(this.deleteNodo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buscarNodo);
             this.Controls.Add(this.strBuscar);
@@ -298,5 +358,10 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buscarNodo;
         private System.Windows.Forms.TextBox strBuscar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button eliminarNodo;
+        private System.Windows.Forms.TextBox deleteNodo;
+        private System.Windows.Forms.CheckBox NivelesCheck;
+        private System.Windows.Forms.Label lblRecorridoNiveles;
     }
 }
