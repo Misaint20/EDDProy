@@ -236,7 +236,6 @@ namespace EDDemo.Estructuras_No_Lineales
             }
         }
 
-        /*
         private void infoArbol_Click(object sender, EventArgs e)
         {
             if (miArbol.EstaVacio())
@@ -251,7 +250,7 @@ namespace EDDemo.Estructuras_No_Lineales
                          $"Es árbol completo: {miArbol.EsArbolCompleto()}\n" +
                          $"Es árbol lleno: {miArbol.EsArbolLleno()}";
 
-            txtResultado.Text = info;
-        } */
+            MessageBox.Show(info, "Informacion del Arbol", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }   
     }
 }

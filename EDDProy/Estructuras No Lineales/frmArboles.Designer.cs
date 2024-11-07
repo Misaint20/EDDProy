@@ -52,6 +52,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.deleteNodo = new System.Windows.Forms.TextBox();
             this.NivelesCheck = new System.Windows.Forms.CheckBox();
             this.lblRecorridoNiveles = new System.Windows.Forms.Label();
+            this.infoArbol = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -297,15 +298,27 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRecorridoNiveles.Location = new System.Drawing.Point(272, 131);
             this.lblRecorridoNiveles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecorridoNiveles.Name = "lblRecorridoNiveles";
-            this.lblRecorridoNiveles.Size = new System.Drawing.Size(13, 13);
+            this.lblRecorridoNiveles.Size = new System.Drawing.Size(0, 13);
             this.lblRecorridoNiveles.TabIndex = 25;
-            this.lblRecorridoNiveles.Text = "1";
+            // 
+            // infoArbol
+            // 
+            this.infoArbol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoArbol.Location = new System.Drawing.Point(303, 11);
+            this.infoArbol.Margin = new System.Windows.Forms.Padding(2);
+            this.infoArbol.Name = "infoArbol";
+            this.infoArbol.Size = new System.Drawing.Size(62, 24);
+            this.infoArbol.TabIndex = 27;
+            this.infoArbol.Text = "Info";
+            this.infoArbol.UseVisualStyleBackColor = true;
+            this.infoArbol.Click += new System.EventHandler(this.infoArbol_Click);
             // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 389);
+            this.Controls.Add(this.infoArbol);
             this.Controls.Add(this.NivelesCheck);
             this.Controls.Add(this.lblRecorridoNiveles);
             this.Controls.Add(this.label2);
@@ -363,5 +376,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.TextBox deleteNodo;
         private System.Windows.Forms.CheckBox NivelesCheck;
         private System.Windows.Forms.Label lblRecorridoNiveles;
+        private System.Windows.Forms.Button infoArbol;
     }
 }
