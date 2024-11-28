@@ -74,9 +74,28 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
+    <Compile Include="Estructuras lineales\Clases\Colas.cs" />
+    <Compile Include="Estructuras lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras lineales\Clases\Pila.cs" />
+    <Compile Include="Estructuras lineales\frmColas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmColas.Designer.cs">
+      <DependentUpon>frmColas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListas.Designer.cs">
+      <DependentUpon>frmListas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmPilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmPilas.Designer.cs">
+      <DependentUpon>frmPilas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
@@ -96,12 +115,6 @@
     </Compile>
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
-      <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
@@ -166,6 +179,15 @@
     <Compile Include="Recursividad\SumArrayForm.Designer.cs">
       <DependentUpon>SumArrayForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Estructuras lineales\frmColas.resx">
+      <DependentUpon>frmColas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras lineales\frmListas.resx">
+      <DependentUpon>frmListas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras lineales\frmPilas.resx">
+      <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
-      <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
