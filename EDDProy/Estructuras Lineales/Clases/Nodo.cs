@@ -11,13 +11,17 @@ namespace EDDemo.Estructuras_lineales.Clases
         // Propiedad que referencia al siguiente nodo en la estructura
         public Nodo Sig { get; set; }
 
+        // Propiedad que referencia al nodo anterior en la estructura
+        public Nodo Ant { get; set; }
+
         // Constructor de la clase Nodo
         public Nodo(object dato)
         {
             // Inicializa el dato del nodo
             Dato = dato;
-            // Inicializa la referencia al siguiente nodo como null
+            // Inicializa las referencias al siguiente y anterior nodo como null
             Sig = null;
+            Ant = null;
         }
     }
 }

@@ -74,10 +74,19 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estructuras lineales\Clases\CircularesDobles.cs" />
     <Compile Include="Estructuras lineales\Clases\Colas.cs" />
     <Compile Include="Estructuras lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras lineales\Clases\ListasCirculares.cs" />
+    <Compile Include="Estructuras lineales\Clases\ListasDobles.cs" />
     <Compile Include="Estructuras lineales\Clases\Nodo.cs" />
     <Compile Include="Estructuras lineales\Clases\Pila.cs" />
+    <Compile Include="Estructuras lineales\frmCircularesDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmCircularesDobles.Designer.cs">
+      <DependentUpon>frmCircularesDobles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras lineales\frmColas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +98,18 @@
     </Compile>
     <Compile Include="Estructuras lineales\frmListas.Designer.cs">
       <DependentUpon>frmListas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListasCirculares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListasCirculares.Designer.cs">
+      <DependentUpon>frmListasCirculares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListasDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras lineales\frmListasDobles.Designer.cs">
+      <DependentUpon>frmListasDobles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras lineales\frmPilas.cs">
       <SubType>Form</SubType>
@@ -179,11 +200,20 @@
     <Compile Include="Recursividad\SumArrayForm.Designer.cs">
       <DependentUpon>SumArrayForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Estructuras lineales\frmCircularesDobles.resx">
+      <DependentUpon>frmCircularesDobles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras lineales\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras lineales\frmListas.resx">
       <DependentUpon>frmListas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras lineales\frmListasCirculares.resx">
+      <DependentUpon>frmListasCirculares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras lineales\frmListasDobles.resx">
+      <DependentUpon>frmListasDobles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras lineales\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
@@ -550,6 +580,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Busqueda\" />
+    <Folder Include="Ordenacion\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

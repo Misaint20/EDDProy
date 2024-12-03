@@ -85,17 +85,23 @@ namespace EDDemo
 
         private void doblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmListasDobles dobles = new frmListasDobles();
+            dobles.MdiParent = this;
+            dobles.Show();
         }
 
         private void circularesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmListasCirculares circulares = new frmListasCirculares();
+            circulares.MdiParent = this;
+            circulares.Show();
         }
 
         private void circularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmCircularesDobles circularesDobles = new frmCircularesDobles();
+            circularesDobles.MdiParent = this;
+            circularesDobles.Show();
         }
     }
 }
