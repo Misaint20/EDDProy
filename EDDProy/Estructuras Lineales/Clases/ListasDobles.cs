@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace EDDemo.Estructuras_lineales.Clases
 {
-    internal class Listas
+    internal class ListasDobles
     {
         private Nodo cabeza; // Nodo que representa el inicio de la lista
+        private Nodo cola;   // Nodo que representa el final de la lista
 
-        // Metodo para insertar un nuevo Nodo
+        // Método para insertar un nuevo Nodo
         public void Insertar(object dato, int posicion)
         {
-            if (posicion < 0) throw new ArgumentOutOfRangeException("La posición no puede ser negativa.");
+            if (posicion < 0) MessageBox.Show("La posición no puede ser negativa.");
 
             Nodo nuevoNodo = new Nodo(dato); // Crea un nuevo nodo
 
@@ -17,7 +19,15 @@ namespace EDDemo.Estructuras_lineales.Clases
             if (posicion == 0)
             {
                 nuevoNodo.Sig = cabeza; // El nuevo nodo apunta a la cabeza actual
+                if (cabeza != null)
+                {
+                    cabeza.Ant = nuevoNodo; // El nodo anterior de la cabeza ahora apunta al nuevo nodo
+                }
                 cabeza = nuevoNodo; // La cabeza ahora es el nuevo nodo
+                if (cola == null) // Si la lista estaba vacía, la cola también es el nuevo nodo
+                {
+                    cola = nuevoNodo;
+                }
                 return;
             }
 
@@ -38,21 +48,23 @@ namespace EDDemo.Estructuras_lineales.Clases
                 if (cabeza == null)
                 {
                     cabeza = nuevoNodo;
+                    cola = nuevoNodo; // La cola también será el nuevo nodo
                 }
                 else
                 {
-                    // Recorre hasta el final y agrega el nuevo nodo
-                    Nodo temp = cabeza;
-                    while (temp.Sig != null)
-                    {
-                        temp = temp.Sig;
-                    }
-                    temp.Sig = nuevoNodo;
+                    cola.Sig = nuevoNodo; // El nodo anterior a la cola apunta al nuevo nodo
+                    nuevoNodo.Ant = cola; // El nuevo nodo apunta hacia atrás a la cola
+                    cola = nuevoNodo; // Actualiza la cola
                 }
             }
             else
             {
                 nuevoNodo.Sig = actual.Sig; // El nuevo nodo apunta al siguiente nodo
+                nuevoNodo.Ant = actual; // El nuevo nodo apunta hacia atrás al nodo actual
+                if (actual.Sig != null)
+                {
+                    actual.Sig.Ant = nuevoNodo; // El siguiente nodo apunta hacia atrás al nuevo nodo
+                }
                 actual.Sig = nuevoNodo; // El nodo actual apunta al nuevo nodo
             }
         }
@@ -68,6 +80,14 @@ namespace EDDemo.Estructuras_lineales.Clases
             if (posicion == 0)
             {
                 cabeza = cabeza.Sig; // Mueve la cabeza al siguiente nodo
+                if (cabeza != null)
+                {
+                    cabeza.Ant = null; // La nueva cabeza no tiene nodo anterior
+                }
+                else
+                {
+                    cola = null; // Si la lista queda vacía, la cola también es null
+                }
                 return;
             }
 
@@ -75,36 +95,32 @@ namespace EDDemo.Estructuras_lineales.Clases
             int contador = 0;
 
             // Recorre hasta la posición deseada o hasta el final de la lista
-            while (actual != null && contador < posicion - 1)
+            while (actual != null && contador < posicion)
             {
                 actual = actual.Sig;
                 contador++;
             }
 
-            // Si la posición es mayor que el número de nodos, no se realiza ninguna eliminación
-            if (actual == null || actual.Sig == null)
+            // Si el nodo a eliminar no existe, no se realiza ninguna eliminación
+            if (actual == null) return;
+
+            // Si el nodo a eliminar es la cola
+            if (actual.Sig == null)
             {
-                // Eliminar el último nodo
-                Nodo temp = cabeza;
-                if (temp == null) return; // Si la lista está vacía, no hace nada
-
-                // Si hay solo un nodo
-                if (temp.Sig == null)
+                cola = actual.Ant; // Actualiza la cola al nodo anterior
+                if (cola != null)
                 {
-                    cabeza = null; // La lista queda vacía
-                    return;
+                    cola.Sig = null; // El nuevo nodo cola no tiene siguiente
                 }
-
-                // Recorre hasta el penúltimo nodo
-                while (temp.Sig.Sig != null)
-                {
-                    temp = temp.Sig;
-                }
-                temp.Sig = null; // Elimina el último nodo
             }
             else
             {
-                actual.Sig = actual.Sig.Sig; // Salta el nodo a eliminar
+                actual.Sig.Ant = actual.Ant; // El siguiente nodo apunta hacia atrás al nodo anterior
+            }
+
+            if (actual.Ant != null)
+            {
+                actual.Ant.Sig = actual.Sig; // El nodo anterior apunta al siguiente nodo
             }
         }
 
@@ -137,6 +153,11 @@ namespace EDDemo.Estructuras_lineales.Clases
         public Nodo Cabeza()
         {
             return cabeza; // Devuelve la cabeza de la lista
+        }
+
+        public Nodo Cola()
+        {
+            return cola;
         }
     }
 }

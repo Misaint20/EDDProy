@@ -63,9 +63,8 @@ namespace EDDemo.Estructuras_No_Lineales
             miArbol.PodarArbol();
             miRaiz = null;
             txtArbol.Text = "";
-            lblRecorridoPreOrden.Text = "";
-            lblRecorridoInOrden.Text = "";
-            lblRecorridoPostOrden.Text = "";
+            LimpiarLblsRecorrido();
+            DesmarcarCheckboxes();
         }
 
         private void LimpiarLblsRecorrido()

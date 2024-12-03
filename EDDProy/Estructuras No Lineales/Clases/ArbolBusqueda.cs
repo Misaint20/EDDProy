@@ -76,6 +76,7 @@ namespace EDDemo.Estructuras_No_Lineales
             InOrden(nodo.Der);
         }
 
+
         public void PostOrden(NodoBinario nodo)
         {
             if (nodo == null) return;

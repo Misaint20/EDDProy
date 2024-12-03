@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Algoritmos_recursividad;
+using EDDemo.Estructuras_lineales;
 using EDDemo.Estructuras_No_Lineales;
 
 namespace EDDemo
@@ -19,26 +13,11 @@ namespace EDDemo
             InitializeComponent();
         }
 
-        private void frmInicio_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPilas mPilas = new frmPilas();
-            mPilas.MdiParent = this;
-            mPilas.Show();
-        }
-
-        private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            frmPilas pilas = new frmPilas();
+            pilas.MdiParent = this;
+            pilas.Show();
         }
 
         private void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,6 +67,41 @@ namespace EDDemo
             HanoiForm hanoi = new HanoiForm();
             hanoi.MdiParent = this;
             hanoi.Show();
+        }
+
+        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmColas colas = new frmColas();
+            colas.MdiParent = this;
+            colas.Show();
+        }
+
+        private void simplesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListas simples = new frmListas();
+            simples.MdiParent = this;
+            simples.Show();
+        }
+
+        private void doblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasDobles dobles = new frmListasDobles();
+            dobles.MdiParent = this;
+            dobles.Show();
+        }
+
+        private void circularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasCirculares circulares = new frmListasCirculares();
+            circulares.MdiParent = this;
+            circulares.Show();
+        }
+
+        private void circularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCircularesDobles circularesDobles = new frmCircularesDobles();
+            circularesDobles.MdiParent = this;
+            circularesDobles.Show();
         }
     }
 }
