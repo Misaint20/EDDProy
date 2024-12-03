@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using Algoritmos_recursividad;
+using EDDemo.Busqueda;
 using EDDemo.Estructuras_lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Ordenamiento;
 
 namespace EDDemo
 {
@@ -102,6 +104,55 @@ namespace EDDemo
             frmCircularesDobles circularesDobles = new frmCircularesDobles();
             circularesDobles.MdiParent = this;
             circularesDobles.Show();
+        }
+
+        private void bubbleSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBubble bubble = new frmBubble();
+            bubble.MdiParent = this;
+            bubble.Show();
+        }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuickSort quickSort = new frmQuickSort();
+            quickSort.MdiParent = this;
+            quickSort.Show();
+        }
+
+        private void shellSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShellSort shellSort = new frmShellSort();
+            shellSort.MdiParent = this;
+            shellSort.Show();
+        }
+
+        private void radixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRadix radix = new frmRadix();
+            radix.MdiParent = this;
+            radix.Show();
+        }
+
+        private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBinaria binaria = new frmBinaria();
+            binaria.MdiParent = this;
+            binaria.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHash hash = new frmHash();
+            hash.MdiParent = this;
+            hash.Show();
+        }
+
+        private void hashAvanzadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHashAvanced hashAvanced = new frmHashAvanced();
+            hashAvanced.MdiParent = this;
+            hashAvanced.Show();
         }
     }
 }
