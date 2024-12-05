@@ -242,6 +242,9 @@
     <Compile Include="Recursividad\SumArrayForm.Designer.cs">
       <DependentUpon>SumArrayForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda\frmBinaria.resx">
+      <DependentUpon>frmBinaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Busqueda\frmHash.resx">
       <DependentUpon>frmHash.cs</DependentUpon>
     </EmbeddedResource>
@@ -637,9 +640,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Busqueda\" />
-    <Folder Include="Ordenacion\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
