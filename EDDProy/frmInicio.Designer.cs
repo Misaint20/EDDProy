@@ -1,5 +1,4 @@
-﻿
-namespace EDDemo
+﻿namespace EDDemo
 {
     partial class frmInicio
     {
@@ -257,21 +256,12 @@ namespace EDDemo
             this.radixToolStripMenuItem.Text = "Radix";
             this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
-            this.simplesToolStripMenuItem.Name = "simplesToolStripMenuItem";
-            this.simplesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.simplesToolStripMenuItem.Text = "Simples";
-            this.simplesToolStripMenuItem.Click += new System.EventHandler(this.simplesToolStripMenuItem_Click);
-            // 
             // binariaToolStripMenuItem
             // 
             this.binariaToolStripMenuItem.Name = "binariaToolStripMenuItem";
             this.binariaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.binariaToolStripMenuItem.Text = "Binaria";
             this.binariaToolStripMenuItem.Click += new System.EventHandler(this.binariaToolStripMenuItem_Click);
-            this.doblesToolStripMenuItem.Name = "doblesToolStripMenuItem";
-            this.doblesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.doblesToolStripMenuItem.Text = "Dobles";
-            this.doblesToolStripMenuItem.Click += new System.EventHandler(this.doblesToolStripMenuItem_Click);
             // 
             // hashToolStripMenuItem
             // 
@@ -279,32 +269,6 @@ namespace EDDemo
             this.hashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hashToolStripMenuItem.Text = "Hash";
             this.hashToolStripMenuItem.Click += new System.EventHandler(this.hashToolStripMenuItem_Click);
-            this.circularesToolStripMenuItem.Name = "circularesToolStripMenuItem";
-            this.circularesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.circularesToolStripMenuItem.Text = "Circulares";
-            this.circularesToolStripMenuItem.Click += new System.EventHandler(this.circularesToolStripMenuItem_Click);
-            // 
-            // circularesDoblesToolStripMenuItem
-            // 
-            this.circularesDoblesToolStripMenuItem.Name = "circularesDoblesToolStripMenuItem";
-            this.circularesDoblesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.circularesDoblesToolStripMenuItem.Text = "Circulares dobles";
-            this.circularesDoblesToolStripMenuItem.Click += new System.EventHandler(this.circularesDoblesToolStripMenuItem_Click);
-            // 
-            // estructurasNoLinealesToolStripMenuItem
-            // 
-            this.estructurasNoLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arbolesToolStripMenuItem});
-            this.estructurasNoLinealesToolStripMenuItem.Name = "estructurasNoLinealesToolStripMenuItem";
-            this.estructurasNoLinealesToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.estructurasNoLinealesToolStripMenuItem.Text = "Estructuras no lineales";
-            // 
-            // arbolesToolStripMenuItem
-            // 
-            this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
-            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.arbolesToolStripMenuItem.Text = "Arboles";
-            this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -354,4 +318,3 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem hashAvanzadoToolStripMenuItem;
     }
 }
-
