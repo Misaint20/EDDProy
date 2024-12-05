@@ -1,5 +1,4 @@
-﻿
-namespace EDDemo
+﻿namespace EDDemo
 {
     partial class frmInicio
     {
@@ -319,4 +318,3 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem hashAvanzadoToolStripMenuItem;
     }
 }
-

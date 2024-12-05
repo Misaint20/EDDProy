@@ -51,7 +51,6 @@ namespace EDDemo
         {
             ShowForm<BinarySearchForm>();
         }
-
         private void sumaDeArraysToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowForm<SumArrayForm>();
