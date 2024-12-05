@@ -76,7 +76,6 @@
   <ItemGroup>
     <Compile Include="Busqueda\Clases\Binaria.cs" />
     <Compile Include="Busqueda\Clases\Hash.cs" />
-    <Compile Include="Busqueda\Clases\HashAvanced.cs" />
     <Compile Include="Busqueda\frmBinaria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,12 +87,6 @@
     </Compile>
     <Compile Include="Busqueda\frmHash.Designer.cs">
       <DependentUpon>frmHash.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Busqueda\frmHashAvanced.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Busqueda\frmHashAvanced.Designer.cs">
-      <DependentUpon>frmHashAvanced.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras lineales\Clases\CircularesDobles.cs" />
     <Compile Include="Estructuras lineales\Clases\Colas.cs" />
@@ -249,6 +242,9 @@
     <Compile Include="Recursividad\SumArrayForm.Designer.cs">
       <DependentUpon>SumArrayForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda\frmHash.resx">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras lineales\frmCircularesDobles.resx">
       <DependentUpon>frmCircularesDobles.cs</DependentUpon>
     </EmbeddedResource>

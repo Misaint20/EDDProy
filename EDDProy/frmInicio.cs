@@ -15,137 +15,106 @@ namespace EDDemo
             InitializeComponent();
         }
 
+        private void ShowForm<T>() where T : Form, new()
+        {
+            T form = new T();
+            form.MdiParent = this;
+            form.Show();
+        }
+
         private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPilas pilas = new frmPilas();
-            pilas.MdiParent = this;
-            pilas.Show();
+            ShowForm<frmPilas>();
         }
 
         private void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmArboles mArboles = new frmArboles();
-            mArboles.MdiParent = this;
-            mArboles.Show();
+            ShowForm<frmArboles>();
         }
 
         private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FactorialForm factorial = new FactorialForm();
-            factorial.MdiParent = this;
-            factorial.Show();
+            ShowForm<FactorialForm>();
         }
 
         private void fibonacciToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FibonacciForm fibonacci = new FibonacciForm();
-            fibonacci.MdiParent = this;
-            fibonacci.Show();
+            ShowForm<FibonacciForm>();
         }
 
         private void exponentesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExponentForm exponent = new ExponentForm();
-            exponent.MdiParent = this;
-            exponent.Show();
+            ShowForm<ExponentForm>();
         }
 
         private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BinarySearchForm binary = new BinarySearchForm();
-            binary.MdiParent = this;
-            binary.Show();
+            ShowForm<BinarySearchForm>();
         }
 
         private void sumaDeArraysToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SumArrayForm sumArray = new SumArrayForm();
-            sumArray.MdiParent = this;
-            sumArray.Show();
+            ShowForm<SumArrayForm>();
         }
 
         private void hanoiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HanoiForm hanoi = new HanoiForm();
-            hanoi.MdiParent = this;
-            hanoi.Show();
+            ShowForm<HanoiForm>();
         }
 
         private void colasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmColas colas = new frmColas();
-            colas.MdiParent = this;
-            colas.Show();
+            ShowForm<frmColas>();
         }
 
         private void simplesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListas simples = new frmListas();
-            simples.MdiParent = this;
-            simples.Show();
+            ShowForm<frmListas>();
         }
 
         private void doblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListasDobles dobles = new frmListasDobles();
-            dobles.MdiParent = this;
-            dobles.Show();
+            ShowForm<frmListasDobles>();
         }
 
         private void circularesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListasCirculares circulares = new frmListasCirculares();
-            circulares.MdiParent = this;
-            circulares.Show();
+            ShowForm<frmListasCirculares>();
         }
 
         private void circularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCircularesDobles circularesDobles = new frmCircularesDobles();
-            circularesDobles.MdiParent = this;
-            circularesDobles.Show();
+            ShowForm<frmCircularesDobles>();
         }
 
         private void bubbleSortToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBubble bubble = new frmBubble();
-            bubble.MdiParent = this;
-            bubble.Show();
+            ShowForm<frmBubble>();
         }
 
         private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmQuickSort quickSort = new frmQuickSort();
-            quickSort.MdiParent = this;
-            quickSort.Show();
+            ShowForm<frmQuickSort>();
         }
 
         private void shellSortToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmShellSort shellSort = new frmShellSort();
-            shellSort.MdiParent = this;
-            shellSort.Show();
+            ShowForm<frmShellSort>();
         }
 
         private void radixToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRadix radix = new frmRadix();
-            radix.MdiParent = this;
-            radix.Show();
+            ShowForm<frmRadix>();
         }
 
         private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBinaria binaria = new frmBinaria();
-            binaria.MdiParent = this;
-            binaria.Show();
+            ShowForm<frmBinaria>();
         }
 
         private void hashToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHash hash = new frmHash();
-            hash.MdiParent = this;
-            hash.Show();
+            ShowForm<frmHash>();
         }
     }
 }
