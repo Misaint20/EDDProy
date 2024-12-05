@@ -39,6 +39,7 @@
             this.lista2 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblTiempo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -73,7 +74,7 @@
             this.lista1.FormattingEnabled = true;
             this.lista1.Location = new System.Drawing.Point(46, 173);
             this.lista1.Name = "lista1";
-            this.lista1.Size = new System.Drawing.Size(87, 173);
+            this.lista1.Size = new System.Drawing.Size(87, 160);
             this.lista1.TabIndex = 37;
             // 
             // txtDato
@@ -117,7 +118,7 @@
             this.lista2.FormattingEnabled = true;
             this.lista2.Location = new System.Drawing.Point(169, 173);
             this.lista2.Name = "lista2";
-            this.lista2.Size = new System.Drawing.Size(87, 173);
+            this.lista2.Size = new System.Drawing.Size(87, 160);
             this.lista2.TabIndex = 49;
             // 
             // label3
@@ -138,11 +139,21 @@
             this.label4.TabIndex = 51;
             this.label4.Text = "Lista ordenada";
             // 
+            // lblTiempo
+            // 
+            this.lblTiempo.AutoSize = true;
+            this.lblTiempo.Location = new System.Drawing.Point(43, 352);
+            this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Size = new System.Drawing.Size(110, 13);
+            this.lblTiempo.TabIndex = 77;
+            this.lblTiempo.Text = "Tiempo de Ejecucion:";
+            // 
             // frmBubble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 374);
+            this.ClientSize = new System.Drawing.Size(389, 383);
+            this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lista2);
@@ -174,5 +185,6 @@
         private System.Windows.Forms.ListBox lista2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTiempo;
     }
 }

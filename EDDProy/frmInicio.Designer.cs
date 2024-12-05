@@ -271,13 +271,6 @@ namespace EDDemo
             this.hashToolStripMenuItem.Text = "Hash";
             this.hashToolStripMenuItem.Click += new System.EventHandler(this.hashToolStripMenuItem_Click);
             // 
-            // hashAvanzadoToolStripMenuItem
-            // 
-            this.hashAvanzadoToolStripMenuItem.Name = "hashAvanzadoToolStripMenuItem";
-            this.hashAvanzadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hashAvanzadoToolStripMenuItem.Text = "Hash Avanzado";
-            this.hashAvanzadoToolStripMenuItem.Click += new System.EventHandler(this.hashAvanzadoToolStripMenuItem_Click);
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

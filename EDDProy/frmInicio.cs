@@ -147,12 +147,5 @@ namespace EDDemo
             hash.MdiParent = this;
             hash.Show();
         }
-
-        private void hashAvanzadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmHashAvanced hashAvanced = new frmHashAvanced();
-            hashAvanced.MdiParent = this;
-            hashAvanced.Show();
-        }
     }
 }

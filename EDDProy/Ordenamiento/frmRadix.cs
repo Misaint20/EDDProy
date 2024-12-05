@@ -1,6 +1,7 @@
 ﻿using EDDemo.Ordenamiento.Clases;
 using System;
 using System.Linq;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace EDDemo.Ordenamiento
@@ -47,10 +48,14 @@ namespace EDDemo.Ordenamiento
         {
             // Ordena la lista usando el método de ordenación Radix Sort
             RadixSort radixSort = new RadixSort();
+            Stopwatch stopwatch = Stopwatch.StartNew(); // Inicio en la medicion de tiempo de ejecucion
             radixSort.Ordenar(listaNumeros);
+            stopwatch.Stop(); // Fin en la medicion del tiempo de medicion
 
             // Actualiza el ListBox para mostrar la lista ordenada
             ActualizarListBoxOrdenada();
+
+            lblTiempo.Text = $"Tiempo de ejecucion: {stopwatch.ElapsedMilliseconds} ms";
         }
 
         private void ActualizarListBox()

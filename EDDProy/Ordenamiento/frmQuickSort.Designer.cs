@@ -39,6 +39,7 @@
             this.txtDato = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblTiempo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label4
@@ -64,7 +65,7 @@
             this.lista2.FormattingEnabled = true;
             this.lista2.Location = new System.Drawing.Point(148, 169);
             this.lista2.Name = "lista2";
-            this.lista2.Size = new System.Drawing.Size(87, 173);
+            this.lista2.Size = new System.Drawing.Size(87, 160);
             this.lista2.TabIndex = 60;
             // 
             // btnOrdenar
@@ -109,7 +110,7 @@
             this.lista1.FormattingEnabled = true;
             this.lista1.Location = new System.Drawing.Point(25, 169);
             this.lista1.Name = "lista1";
-            this.lista1.Size = new System.Drawing.Size(87, 173);
+            this.lista1.Size = new System.Drawing.Size(87, 160);
             this.lista1.TabIndex = 55;
             // 
             // txtDato
@@ -138,11 +139,21 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "QuickSort";
             // 
+            // lblTiempo
+            // 
+            this.lblTiempo.AutoSize = true;
+            this.lblTiempo.Location = new System.Drawing.Point(22, 351);
+            this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Size = new System.Drawing.Size(110, 13);
+            this.lblTiempo.TabIndex = 76;
+            this.lblTiempo.Text = "Tiempo de Ejecucion:";
+            // 
             // frmQuickSort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 386);
+            this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lista2);
@@ -174,5 +185,6 @@
         private System.Windows.Forms.TextBox txtDato;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTiempo;
     }
 }
