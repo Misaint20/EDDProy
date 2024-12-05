@@ -74,6 +74,20 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda\Clases\Binaria.cs" />
+    <Compile Include="Busqueda\Clases\Hash.cs" />
+    <Compile Include="Busqueda\frmBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\frmBinaria.Designer.cs">
+      <DependentUpon>frmBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busqueda\frmHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\frmHash.Designer.cs">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras lineales\Clases\CircularesDobles.cs" />
     <Compile Include="Estructuras lineales\Clases\Colas.cs" />
     <Compile Include="Estructuras lineales\Clases\Listas.cs" />
@@ -138,6 +152,34 @@
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Ordenamiento\Clases\BubbleSort.cs" />
+    <Compile Include="Ordenamiento\Clases\QuickSort.cs" />
+    <Compile Include="Ordenamiento\Clases\RadixSort.cs" />
+    <Compile Include="Ordenamiento\Clases\ShellSort.cs" />
+    <Compile Include="Ordenamiento\frmBubble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\frmBubble.Designer.cs">
+      <DependentUpon>frmBubble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento\frmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\frmQuickSort.Designer.cs">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento\frmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\frmRadix.Designer.cs">
+      <DependentUpon>frmRadix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento\frmShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\frmShellSort.Designer.cs">
+      <DependentUpon>frmShellSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursividad\BinarySearchForm.cs">
@@ -200,6 +242,9 @@
     <Compile Include="Recursividad\SumArrayForm.Designer.cs">
       <DependentUpon>SumArrayForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda\frmHash.resx">
+      <DependentUpon>frmHash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras lineales\frmCircularesDobles.resx">
       <DependentUpon>frmCircularesDobles.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +271,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\frmBubble.resx">
+      <DependentUpon>frmBubble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\frmQuickSort.resx">
+      <DependentUpon>frmQuickSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\frmRadix.resx">
+      <DependentUpon>frmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\frmShellSort.resx">
+      <DependentUpon>frmShellSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
